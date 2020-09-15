@@ -551,7 +551,7 @@ static UIViewController *_Nullable DecodeViewController(NSCoder *coder, NSString
   [self.view.leftAnchor constraintEqualToAnchor:self.content.leftAnchor].active = YES;
   [self.view.rightAnchor constraintEqualToAnchor:self.content.rightAnchor].active = YES;
   [self.view.topAnchor constraintEqualToAnchor:self.content.topAnchor].active = YES;
-  [self.view.bottomAnchor constraintEqualToAnchor:self.content.bottomAnchor].active = YES;
+  [self.navigationBar.topAnchor constraintEqualToAnchor:self.content.bottomAnchor].active = YES;
 }
 
 /**
